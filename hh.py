@@ -73,8 +73,8 @@ def insert_data():
       fname7 = request.form.get('fname7')  # access the data inside 
       lname7 = request.form.get('lname7')
           
-      todos.append(fname)
-      todos.append(lname)
+      # todos.append(fname)
+      # todos.append(lname)
       new={
             "firstname":fname,
                 "lastname":lname,
