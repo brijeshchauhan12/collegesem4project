@@ -1,1 +1,1 @@
-web: gunicon hh:app
+web: gunicorn hh:app
