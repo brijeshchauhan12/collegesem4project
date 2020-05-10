@@ -29,7 +29,7 @@ app.secret_key="brijeshi skfklajkdfl;asdf "
 # db = client.test
 cluster=MongoClient("mongodb+srv://brijesh:jyoti2020##B@cluster0-cvo7x.mongodb.net/test?retryWrites=true&w=majority")
 dbbb=cluster["brijesh"]
-secondtaskcol=dbbb["brijesh2"]
+secondtaskcol=dbbb["brijesh1"]
 # derd={"brijesh":"hellow","chauhan":"rythkdfaslf"}
 # secondtaskcol.insert_one(derd)
 
