@@ -1,51 +1,62 @@
 {% extends "partials/header.html"%}
 {%block header%}
 
-<form  id="" action="/index" method="post">
+<form   action="/index" method="post">
+  <div class="container">
  <div class="row">
- 	<div class=" col col-lg-4 col-md-6 col-sm-12">
-  <label for="fname">first name:</label><br>
+ 	<div id="ghh" class="col-sm-12 col-md-4 col-lg-3">
+    
+  <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname"><br>
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname"><br>
-  <label for="fname1">first name:</label><br>
-  <input type="text" id="fname1" name="fname1"><br>
-  <label for="lname1">Last name:</label><br>
-  <input type="text" id="lname1" name="lname1"><br>
-</div>
-<div class="col col-lg-4 col-md-6 col-sm-12">
-  <label for="fname2">Last name:</label><br>
-  <input type="text" id="fname2" name="fname2"><br>
-  <label for="lname2">Last name:</label><br>
-  <input type="text" id="lname2" name="lname2"><br>
-  <label for="first3">Last name:</label><br>
+ 
+  <label for="fname1">AGe:</label><br>
+  <input type="number" id="fname1" name="fname1"><br>
+  <label for="lname1">Approx Date of Admission:</label><br>
+  <input type="date" id="lname1" name="lname1"><br>
+   
+  </div>
+
+<div class="col-sm-12 col-md-4 col-lg-3">
+
+
+  <label for="fname2">Approx Last Date When You Left:</label><br>
+  <input type="date" id="fname2" name="fname2"><br>
+  <label for="lname2">Birthdate:</label><br>
+  <input type="date" id="lname2" name="lname2"><br>
+  <label for="first3">Best Teacher(Male):</label><br>
   <input type="text" id="fname3" name="fname3"><br>
-  <label for="lname3">Last name:</label><br>
-  <input type="text" id="lname3" name="lname3"><br>
+  <label for="lname3">Your Most Memorable Class:</label><br>
+  <input type="number" id="lname3" name="lname3"><br>
 </div>
-<div class="col col-lg-4 col-md-6 col-sm-12"  >
-   <label for="fname4">Last name:</label><br>
+<div class="col-sm-12 col-md-4 col-lg-3">
+
+  <label for="fname4">Best Teacher(Female)</label><br>
   <input type="text" id="fname4" name="fname4"><br>
-  <label for="lname4">Last name:</label><br>
+  <label for="lname4">Have You Ever Rang The Bell(Yes/No)</label><br>
   <input type="text" id="lname4" name="lname4"><br>
-  <label for="first5">Last name:</label><br>
+  <label for="first5">One Word For PehlWan The Great</label><br>
   <input type="text" id="fname5" name="fname5"><br>
-  <label for="lname5">Last name:</label><br>
+  <label for="lname5">One Word For BachchuLal </label><br>
   <input type="text" id="lname5" name="lname5"><br>
 </div>
- <div class="col col-lg-1 col-md-2 col-sm-3" >
-  <label for="fname6">Last name:</label><br>
+<div class="col-sm-12 col-md-4 col-lg-3">
+
+  <label for="fname6">One Word For Nagendra Sirji</label><br>
   <input type="text" id="fname6" name="fname6"><br>
-  <label for="lname6">Last name:</label><br>
+  <label for="lname6"> Your Crush Name There </label><br>
   <input type="text" id="lname6" name="lname6"><br>
-  <label for="first7">Last name:</label><br>
+  <label for="first7">One Word About Principle Of Your Time:</label><br>
   <input type="text" id="fname7" name="fname7"><br>
-  <label for="lname7">Last name:</label><br>
+  <label for="lname7">Say A Single Word About D.A.V:</label><br>
   <input type="text" id="lname7" name="lname7"><br>
+</div>
  </div> 
 </div>
   <hr></hr>
   <div style="text-align:center;"><input type="submit" value="Submit"></div>
+</container>
 </form>
 
 {%block footer%}{%endblock%}

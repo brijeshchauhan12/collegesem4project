@@ -219,7 +219,7 @@ for num, doc in enumerate(mongo_docs):
   doc_id = doc["_id"]
   series_obj = pandas.Series( doc,name=doc_id )
   docs = docs.append(series_obj)
-print(docs)  
+#print(docs)  
 
 most_common_first_name_is=docs['firstname'].value_counts()[0]
 print(docs['firstname'].value_counts())
