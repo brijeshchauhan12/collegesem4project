@@ -49,7 +49,7 @@ def index():
 
 @app.route("/thanks")
 def thanks():
-  return render_template("thanks")
+  return render_template("thanks.html")
 
 
 @app.route('/')
@@ -98,6 +98,7 @@ def insert_data():
                             
           }   
       secondtaskcol.insert_one(new)
+      return redirect(url_for('thanks'))
     
 
           # collection.insert_one(new)
