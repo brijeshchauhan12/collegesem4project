@@ -1,21 +1,34 @@
 {% extends "partials/header.html"%}
 {%block header%}
-
+<style type="text/css">
+  h5{
+    text-align: center;
+    },
+  .col-sm-12{
+    text-align: center;
+  },
+  .ghh{
+    text-align: center;
+  },
+  }
+</style>
 <form   action="/index" method="post">
   <div class="container">
  <div class="row">
- 	<div id="ghh" class="col-sm-12 col-md-4 col-lg-3">
+ <div id="ghh" class="col-sm-12 col-md-4 col-lg-3">
     
   <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
+  <input type="text" id="fname" name="fname" style="border-radius: 20"><br>
+  <hr></hr>
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname"><br>
- 
-  <label for="fname1">AGe:</label><br>
+ <hr></hr>
+  <label for="fname1">Age:</label><br>
   <input type="number" id="fname1" name="fname1"><br>
+  <hr></hr>
   <label for="lname1">Approx Date of Admission:</label><br>
   <input type="date" id="lname1" name="lname1"><br>
-   
+   <hr></hr>
   </div>
 
 <div class="col-sm-12 col-md-4 col-lg-3">
@@ -23,10 +36,13 @@
 
   <label for="fname2">Approx Last Date When You Left:</label><br>
   <input type="date" id="fname2" name="fname2"><br>
+  <hr></hr>
   <label for="lname2">Birthdate:</label><br>
   <input type="date" id="lname2" name="lname2"><br>
+  <hr></hr>
   <label for="first3">Best Teacher(Male):</label><br>
   <input type="text" id="fname3" name="fname3"><br>
+  <hr></hr>
   <label for="lname3">Your Most Memorable Class:</label><br>
   <input type="number" id="lname3" name="lname3"><br>
 </div>
@@ -34,28 +50,37 @@
 
   <label for="fname4">Best Teacher(Female)</label><br>
   <input type="text" id="fname4" name="fname4"><br>
+  <hr></hr>
   <label for="lname4">Have You Ever Rang The Bell(Yes/No)</label><br>
   <input type="text" id="lname4" name="lname4"><br>
+  <hr></hr>
   <label for="first5">One Word For PehlWan The Great</label><br>
   <input type="text" id="fname5" name="fname5"><br>
+  <hr></hr>
   <label for="lname5">One Word For BachchuLal </label><br>
   <input type="text" id="lname5" name="lname5"><br>
+  <hr></hr>
 </div>
 <div class="col-sm-12 col-md-4 col-lg-3">
 
   <label for="fname6">One Word For Nagendra Sirji</label><br>
   <input type="text" id="fname6" name="fname6"><br>
-  <label for="lname6"> Your Crush Name There </label><br>
+  <hr></hr>
+  <label for="lname6"> To Whome you will Send This Form </label><br>
   <input type="text" id="lname6" name="lname6"><br>
+  <hr></hr>
   <label for="first7">One Word About Principle Of Your Time:</label><br>
   <input type="text" id="fname7" name="fname7"><br>
+  <hr></hr>
   <label for="lname7">Say A Single Word About D.A.V:</label><br>
   <input type="text" id="lname7" name="lname7"><br>
+  <hr></hr>
 </div>
  </div> 
 </div>
   <hr></hr>
-  <div style="text-align:center;"><input type="submit" value="Submit"></div>
+  <div style="text-align:center;"><input type="submit" value="Submit" ></div>
+  <h5 style="color:red">First Provide All the Entries Then Press submit Button </h5>
 </container>
 </form>
 

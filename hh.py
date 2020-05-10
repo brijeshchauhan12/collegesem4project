@@ -29,9 +29,9 @@ app.secret_key="brijeshi skfklajkdfl;asdf "
 # db = client.test
 cluster=MongoClient("mongodb+srv://brijesh:jyoti2020##B@cluster0-cvo7x.mongodb.net/test?retryWrites=true&w=majority")
 dbbb=cluster["brijesh"]
-secondtaskcol=dbbb["brijesh1"]
-derd={"brijesh":"hellow","chauhan":"rythkdfaslf"}
-secondtaskcol.insert_one(derd)
+secondtaskcol=dbbb["brijesh2"]
+# derd={"brijesh":"hellow","chauhan":"rythkdfaslf"}
+# secondtaskcol.insert_one(derd)
 
 
 
@@ -47,6 +47,9 @@ secondtaskcol.insert_one(derd)
 def index():
     return render_template("index.html")
 
+@app.route("/thanks")
+def thanks():
+  return render_template("thanks")
 
 
 @app.route('/')
