@@ -1,0 +1,9 @@
+{% extends 'partials/header.html' %}
+
+
+{%block header%}
+ {%for ccc in tasks%}
+     <h3> {{ccc.lastname}}</h3>
+     <h3>{{ccc.firstname}}</h3>
+ {%endfor%}
+{%endblock%}

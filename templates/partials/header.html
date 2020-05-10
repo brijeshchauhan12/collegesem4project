@@ -1,0 +1,35 @@
+     
+ <!doctype html>
+<title>{% block title %}{% endblock %}Brijesh</title>
+<head>
+<link rel="stylesheet" href="designn\style.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <style>
+ 	h1{
+ 		color: blue;
+    text-align: center;
+ 	},
+  button{
+    text-align: center;
+  },
+  #bbb{
+    text-align:center;
+  }
+ </style>
+</head>
+<section class="content">
+
+      <h1  >Are you a Ex-Student of D.A.V(HauZ)</h1>
+      <hr></hr>
+
+
+  <header>
+  
+    {% block header %}{% endblock %}
+    
+  </header>
+
+</section>
+{%block footer%}
+ <h6>this is a small survey for gathering the information about the ex-student of D.A.V ,Hauz(Juanpur)</h6>
+ {%endblock%}
