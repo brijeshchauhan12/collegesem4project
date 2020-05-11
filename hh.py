@@ -75,6 +75,7 @@ def insert_data():
       lname6 = request.form.get('lname6')
       fname7 = request.form.get('fname7')  # access the data inside 
       lname7 = request.form.get('lname7')
+      lname8=request.form.get('lname8')
           
       # todos.append(fname)
       # todos.append(lname)
@@ -94,7 +95,8 @@ def insert_data():
                  "firstname6":fname6,
                 "lastname6":lname6,
                  "firstname7":fname7,
-                "lastname7":lname7
+                "lastname7":lname7,
+                'gender':lname8
                             
           }   
       secondtaskcol.insert_one(new)
@@ -128,6 +130,7 @@ def get_tasks():
           'lastname6': task['lastname6'],
            'firstname7': task['firstname7'],
           'lastname7': task['lastname7'],
+          'gender':task['lname8']
 
 
 
