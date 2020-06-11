@@ -2,8 +2,56 @@
 
 
 {%block header%}
+
+    <table style="width:100%">
+  <tr>
+    <th>id</th>
+    <th>Age</th>
+    <th>fav_actor</th>
+    <th>fav_actress</th>
+    <th>fav_book</th>
+    <th>fav_color</th>
+    <th>fav_country</th>
+    <th>fav_cricketer</th>
+    <th>fav_letter</th>
+    <th>fav_movie</th>
+    <th>fav_number</th>
+    
+    <th>fav_profession</th>
+    
+    <th>fav_state</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>sex</th>
+  </tr>
+
+  <tr>
+    <td>{{data['_id']}}</td>
+    
+    <td>{{data['age']}}</td>
+
+    <td>{{data['fav_actor']}}</td>
+    <td>{{data['fav_actress']}}</td>
+    <td>{{data['fav_book']}}</td>
+    <td>{{data['fav_color']}}</td>
+    <td>{{data['fav_country']}}</td>
+    <td>{{data['fav_cricketer']}}</td>
+    <td>{{data['fav_movie']}}</td>
+    <td>{{data['fav_number']}}</td>
+    <td>{{data['fav_profession']}}</td>
+
+    <td>{{data['fav_state']}}</td>
+
+    <td>{{data['firstname']}}</td>
+
+    <td>{{data['lastname']}}</td>
+
+    <td>{{data['sex']}}</td>
+  </tr>
  
-     <h3> {{data}}</h3>
+</table>
+    
+     
      
  
 {%endblock%}

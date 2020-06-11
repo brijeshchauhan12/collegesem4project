@@ -1,105 +1,52 @@
 {% extends "partials/header.html"%}
 {%block header%}
-<style type="text/css">
-  h5{
-    text-align: center;
-    },
-  .col-sm-12{
-    text-align: center;
-  },
-  .ghh{
-    text-align: center;
-  },
-  }
-</style>
-<form   action="/index" method="post">
-  <div class="container">
- <div class="row">
- <div id="ghh" class="col-sm-12 col-md-4 col-lg-3">
-    
-  <label for="fname">First name:</label><br>
-  <input type="text" class="required" class="form-control" id="fname" name="fname" style="border-radius: 20"><br>
-  <hr></hr>
+<div style="background-color:#2deeee;">
+<form  id="" action="/index" method="post">
+
+  <div class="row" >
+  <div class=" col" style='margin-left:0%;' >
+  <label for="fname">first name:</label><br>
+  <input type="text" id="fname" name="fname" class="form-control"><br>
   <label for="lname">Last name:</label><br>
-  <input type="text" class="form-control" id="lname" name="lname"><br>
- <hr></hr>
+  <input type="text" id="lname" name="lname" class="form-control"><br>
   <label for="fname1">Age:</label><br>
-  <input type="number" id="fname1" name="fname1"><br>
-  <hr></hr>
-  <label for="lname1">Approx Date of Admission:</label><br>
-  <input type="date" class="form-control" id="lname1" name="lname1"><br>
-   <hr></hr>
-  </div>
+  <input type="text" id="fname1" name="fname1" class="form-control"><br>
+  <label for="lname1">sex:</label><br>
+  <input type="text" id="lname1" name="lname1" class="form-control"><br>
 
-<div class="col-sm-12 col-md-4 col-lg-3">
+  <label for="fname2">fav No.(1 to 10):</label><br>
+  <input type="text" id="fname2" name="fname2" class="form-control"><br>
+  <label for="lname2">fav letter(A-Z):</label><br>
+  <input type="text" id="lname2" name="lname2" class="form-control"><br>
+  <label for="first3">fav Country:</label><br>
+  <input type="text" id="fname3" name="fname3" class="form-control"><br>
+  <label for="lname3">fav Color:</label><br>
+  <input type="text" id="lname3" name="lname3" class="form-control"><br>
 
+   <label for="fname4">fav actor:</label><br>
+  <input type="text" id="fname4" name="fname4" class="form-control"><br>
+  <label for="lname4">fav actress:</label><br>
+  <input type="text" id="lname4" name="lname4" class="form-control"><br>
+  <label for="first5">fav movie:</label><br>
+  <input type="text" id="fname5" name="fname5" class="form-control"><br>
+  <label for="lname5">fav novel:</label><br>
+  <input type="text" id="lname5" name="lname5" class="form-control"><br>
 
-  <label for="fname2">Approx Last Date When You Left:</label><br>
-  <input type="date" class="form-control" id="fname2" name="fname2"><br>
-  <hr></hr>
-  <label for="lname2">Birthdate:</label><br>
-  <input type="date" class="form-control" id="lname2" name="lname2"><br>
-  <hr></hr>
-  <label for="first3">Best Teacher(Male):</label><br>
-  <input type="text" class="form-control" id="fname3" name="fname3"><br>
-  <hr></hr>
-  <label for="lname3">Your Most Memorable Class:</label><br>
-  <input type="number" class="form-control" id="lname3" name="lname3"><br>
-</div>
-<div class="col-sm-12 col-md-4 col-lg-3">
-
-  <label for="fname4">Best Teacher(Female)</label><br>
-  <input type="text" class="form-control" id="fname4" name="fname4"><br>
-  <hr></hr>
-  <label for="lname4">Have You Ever Rang The Bell(Yes/No)</label><br>
-  <input type="text" class="form-control" id="lname4" name="lname4"><br>
-  <hr></hr>
-  <label for="first5">One Word For PehlWan(BookSeller) The Great</label><br>
-  <input type="text" class="form-control" id="fname5" name="fname5"><br>
-  <hr></hr>
-  <label for="lname5">Current Occupation(Student/Jobname)</label><br>
-  <input type="text" class="form-control" id="lname5" name="lname5"><br>
-  <hr></hr>
-</div>
-<div class="col-sm-12 col-md-4 col-lg-3">
-
-  <label for="fname6">One Word For Nagendra Sirji</label><br>
-  <input type="text" class="form-control" id="fname6" name="fname6"><br>
-  <hr></hr>
-  <label for="lname6"> To Whome you will Send This Form </label><br>
-  <input type="text" class="form-control" id="lname6" name="lname6"><br>
-  <hr></hr>
-  <label for="first7">One Word About Principle Of Your Time:</label><br>
-  <input type="text" class="form-control" id="fname7" name="fname7"><br>
-  <hr></hr>
-  <label for="lname7">Say A Single Word About D.A.V:</label><br>
-  <input type="text" class="form-control" id="lname7" name="lname7"><br>
-  <hr></hr>
-</div>
+  <label for="fname6">fav profession:</label><br>
+  <input type="text" id="fname6" name="fname6" class="form-control"><br>
+  <label for="lname6">fav crickter:</label><br>
+  <input type="text" id="lname6" name="lname6" class="form-control"><br>
+  <label for="first7">fav state of india:</label><br>
+  <input type="text" id="fname7" name="fname7" class="form-control"><br>
+  <label for="lname7">fav book:</label><br>
+  <input type="text" id="lname7" name="lname7" class="form-control"><br>
  </div> 
 </div>
   <hr></hr>
-  <div style="text-align:center;">
-    <label for="lame8"> Gender</label>
-    <input type="text" class=" id="lame8" name="lname8" >
+  <div style="text-align:center;"><input type="submit"  value="Submit">
   </div>
-  <div style="text-align:center;"><input type="submit" value="Submit" ></div>
-  <h5 style="color:red">First Provide All the Entries Then Press submit Button </h5>
-</container>
 </form>
+</div>
 
 {%block footer%}{%endblock%}
 {%endblock%}
-
-
-
-
-
-
-
-
-
-
-
-
-
