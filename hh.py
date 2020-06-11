@@ -148,9 +148,9 @@ def thanks():
 @app.route('/pandass')
 def panddda():
   return render_template('panda.html',data=docs)
-
-
-
+@app.route('/admin')
+def admins():
+  return render_template('admin.html')
 
 if __name__=='__main__':
   app.debug=False

@@ -1,0 +1,34 @@
+{% extends "partials/header.html"%}
+{%block header%}
+
+<style>
+	.bbbb{
+		text-align: center;
+		color: rgb(20,100,100,.5);
+
+	},
+	#brijesh{
+		margin-left: 500px;
+	}
+	
+</style >
+<div >
+<div id="brijesh" style="margin-left: 500px;">
+<div>
+<img src="{{url_for('static', filename='brijeshh.jpg')}}" align="middle" alt="Brijesh Chauhan" width=350 height=350 border-radius=10px />
+<h5 style="color:blue;">Brijesh Chauhan</h5>
+</div>
+
+<div >
+<img src="{{url_for('static', filename='manisha.jpg')}}" align="middle"alt="Manisha Chaudhari" width=350 height=350 />
+<h5 style="color:blue;">Manisha Chaudhari</h5>
+</div>
+
+<div >
+<img src="{{url_for('static', filename='ayushi.jpg')}}" align="middle" alt="Ayushi Srivastava" width=350 height=350 />
+<h5 style="color:blue;">Ayushi Srivastava</h5>
+</div>
+</div>
+</div>
+{%block footer%}{%endblock%}
+{%endblock%}
