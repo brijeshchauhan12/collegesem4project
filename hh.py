@@ -80,7 +80,7 @@ def insert_data():
 
       secondtaskcol.insert_one(new)
       
-      return redirect(url_for('index/thanks'))
+      return redirect(url_for('thanks'))
     
     
           # collection.insert_one(new)
@@ -142,10 +142,10 @@ print(docs)
   # docs=docs.drop(['_id'],axis=1)
   
 
-@app.route("index/thanks")
+@app.route("/thanks")
 def thanks():
   return render_template("thanks.html")
-@app.route('index/pandass')
+@app.route('/pandass')
 def panddda():
   return render_template('panda.html',data=docs)
 
