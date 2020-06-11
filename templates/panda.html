@@ -2,8 +2,9 @@
 
 
 {%block header%}
-
-    <table style="width:100%">
+   <div class="table-responsive">
+    <table style="width:100%" class="table table-bordered table-hover">
+    	<thead class="thead-dark">
   <tr>
     <th>id</th>
     <th>Age</th>
@@ -24,6 +25,7 @@
     <th>Lastname</th>
     <th>sex</th>
   </tr>
+</thead>
    <tr>
     <td>{%for n in range(0,data['age'].count())%}
   <h6>{{data["_id"][n]}}</h6>
@@ -82,6 +84,7 @@
   
   
   </table>
+</div>
       
      
      

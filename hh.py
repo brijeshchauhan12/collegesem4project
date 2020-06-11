@@ -79,7 +79,7 @@ def insert_data():
           }   
       secondtaskcol.insert_one(new)
       
-      return redirect(url_for('thanks'))
+      return redirect(url_for('thanks',username=new['firstname']))
     
     
           # collection.insert_one(new)
@@ -137,7 +137,7 @@ for doc in mongo_docs:
   series_obj=pandas.Series(doc)
   docs=docs.append(series_obj,ignore_index=True)
 
-
+print(docs)
   # docs=docs.drop(['_id'],axis=1)
   
 
