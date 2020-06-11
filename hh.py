@@ -141,15 +141,15 @@ for doc in mongo_docs:
   # docs=docs.drop(['_id'],axis=1)
   
 
-print(docs['age'].count())
+@app.route('/pandass')
+def panddda():
+  return render_template('panda.html',data=docs)
 
 @app.route("/thanks")
 def thanks():
   return render_template("thanks.html")
 
-@app.route('/pandass')
-def panddda():
-  return render_template('panda.html',data=docs)
+
 
 if __name__=='__main__':
   app.debug=False
