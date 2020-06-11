@@ -22,7 +22,7 @@ app.secret_key="brijeshi skfklajkdfl;asdf "
 
 cluster=MongoClient("mongodb+srv://brijesh:jyoti2020##B@cluster0-cvo7x.mongodb.net/test?retryWrites=true&w=majority")
 dbbb=cluster["brijesh"]
-secondtaskcol=dbbb["brijesh1"]
+secondtaskcol=dbbb["brijesh2"]
 
 @app.route("/index")
 def index():
@@ -116,18 +116,6 @@ def get_tasks():
 
     return jsonify({'tasks': task_list})
 
-# @app.route('/index/colll/<task_id>', methods=['GET'])
-# def get_task(task_id):
-#     tasks = secondtaskcol.find({'id': task_id})
-#     if tasks.count() == 0:
-#         return jsonify({'task': None})
-#     return jsonify({'task': tasks})    
-
-# @app.route('/show')
-# def show():
-#   tasks=secondtaskcol.find()
-#   return render_template('show.html' ,tasks=tasks)
-
 @app.route('/test', methods=['GET'])
 def test():
     return jsonify({'msg': 'This is a Test'})
@@ -139,17 +127,21 @@ mongo_docs=list(cursor)
 
 docs = pandas.DataFrame(columns=[])
 
-for num, doc in enumerate(mongo_docs):
-  doc["_id"] = str(doc["_id"])
-  doc_id = doc["_id"]
-  series_obj = pandas.Series( doc,name=doc_id )
+# for num, doc in enumerate(mongo_docs):
+#   doc["_id"] = str(doc["_id"])
+#   doc_id = doc["_id"]
+#   series_obj = pandas.Series( doc,name=doc_id )
+#   print(series_obj)
+#   docs = docs.append(series_obj)
+for doc in mongo_docs:
+  series_obj=pandas.Series(doc)
+  docs=docs.append(series_obj,ignore_index=True)
 
-  docs = docs.append(series_obj)
-#print(docs)  
+
   # docs=docs.drop(['_id'],axis=1)
   
 
-print(docs)
+print(docs['age'].count())
 
 @app.route("/thanks")
 def thanks():

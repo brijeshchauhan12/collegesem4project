@@ -24,33 +24,65 @@
     <th>Lastname</th>
     <th>sex</th>
   </tr>
-
-  <tr>
-    <td>{{data['_id']}}</td>
-    
-    <td>{{data['age']}}</td>
-
-    <td>{{data['fav_actor']}}</td>
-    <td>{{data['fav_actress']}}</td>
-    <td>{{data['fav_book']}}</td>
-    <td>{{data['fav_color']}}</td>
-    <td>{{data['fav_country']}}</td>
-    <td>{{data['fav_cricketer']}}</td>
-    <td>{{data['fav_movie']}}</td>
-    <td>{{data['fav_number']}}</td>
-    <td>{{data['fav_profession']}}</td>
-
-    <td>{{data['fav_state']}}</td>
-
-    <td>{{data['firstname']}}</td>
-
-    <td>{{data['lastname']}}</td>
-
-    <td>{{data['sex']}}</td>
+   <tr>
+    <td>{%for n in range(0,data['age'].count())%}
+  <h6>{{data["_id"][n]}}</h6>
+  {%endfor%}</td>
+    <td>{%for n in range(0,data['age'].count())%}
+  <h6>{{data["age"][n]}}</h6>
+  {%endfor%}</td>
+   <td>{%for n in range(0,data['age'].count())%}
+  <h6>{{data["fav_actor"][n]}}</h6>
+  {%endfor%}</td>
+    <td>{%for n in range(0,data['age'].count())%}
+  <h6>{{data["fav_actress"][n]}}</h6>
+  {%endfor%}</td>
+   <td>{%for n in range(0,data['age'].count())%}
+  <h6>{{data["fav_book"][n]}}</h6>
+  {%endfor%}</td>
+    <td>{%for n in range(0,data['age'].count())%}
+  <h6>{{data["fav_color"][n]}}</h6>
+  {%endfor%}</td>
+   <td>{%for n in range(0,data['age'].count())%}
+  <h6>{{data["fav_country"][n]}}</h6>
+  {%endfor%}</td>
+    <td>{%for n in range(0,data['age'].count())%}
+  <h6>{{data["fav_cricketer"][n]}}</h6>
+  {%endfor%}</td>
+   <td>{%for n in range(0,data['age'].count())%}
+  <h6>{{data["fav_letter"][n]}}</h6>
+  {%endfor%}</td>
+    <td>{%for n in range(0,data['age'].count())%}
+  <h6>{{data["fav_movie"][n]}}</h6>
+  {%endfor%}</td>
+   <td>{%for n in range(0,data['age'].count())%}
+  <h6>{{data["fav_no"][n]}}</h6>
+  {%endfor%}</td>
+    <td>{%for n in range(0,data['age'].count())%}
+  <h6>{{data["fav_profession"][n]}}</h6>
+  {%endfor%}</td>
+   <td>{%for n in range(0,data['age'].count())%}
+  <h6>{{data["fav_state"][n]}}</h6>
+  {%endfor%}</td>
+    <td>{%for n in range(0,data['age'].count())%}
+  <h6>{{data["firstname"][n]}}</h6>
+  {%endfor%}</td>
+   <td>{%for n in range(0,data['age'].count())%}
+  <h6>{{data["lastname"][n]}}</h6>
+  {%endfor%}</td>
+    <td>{%for n in range(0,data['age'].count())%}
+  <h6>{{data["sex"][n]}}</h6>
+  {%endfor%}</td>
   </tr>
- 
-</table>
+
+  
     
+  
+  
+  
+  
+  </table>
+      
      
      
  
